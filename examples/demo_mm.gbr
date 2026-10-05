@@ -1,0 +1,35 @@
+G04 demo board: trace, arc, pad, region, clear + restore *
+%FSLAX24Y24*%
+%MOMM*%
+%ADD10C,0.500*%
+%ADD11R,2.000X1.000*%
+%ADD12C,1.200*%
+G04 10mm straight trace *
+D10*
+X0Y0D02*
+X100000Y0D01*
+G04 quarter arc CCW radius 5mm *
+G75*
+G03*
+X150000Y50000I0J50000D01*
+G01*
+G04 rect flash 2x1mm *
+D11*
+X200000Y20000D03*
+G04 filled region 4x3mm *
+G36*
+X300000Y0D02*
+X340000Y0D01*
+X340000Y30000D01*
+X300000Y30000D01*
+X300000Y0D01*
+G37*
+G04 clear a hole then partially restore *
+%LPC*%
+D12*
+X320000Y15000D03*
+%LPD*%
+D10*
+X320000Y15000D03*
+M02*
+

@@ -1,0 +1,15 @@
+G04 inch units, full circle, polarity clear *
+%FSLAX24Y24*%
+%MOIN*%
+%ADD10C,0.020*%
+%ADD11C,0.100*%
+D11*
+X0Y0D03*
+%LPC*%
+D10*
+G75*
+G02*
+X0Y0I-500J0D01*
+G01*
+M02*
+
